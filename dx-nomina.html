@@ -226,7 +226,7 @@
             <label for="tasa">Tasa Anual</label>
             <select id="tasa">
               <option value="28.66">28.66%</option>
-              <option value="33.02">33.02%</option>
+              <option value="32.83">32.83%</option>
             </select>
           </div>
         </div>
@@ -239,7 +239,7 @@
             <label for="tasaPago">Tasa Anual</label>
             <select id="tasaPago">
               <option value="28.66">28.66%</option>
-              <option value="33.02">33.02%</option>
+              <option value="32.832">32.83%</option>
             </select>
           </div>
         </div>
@@ -343,7 +343,7 @@
           return;
         }
 
-        const tasaMensualAnual = tasaAnualMonto === 28.66 ? 33.2456 / 12 : 38.3032 / 12;
+        const tasaMensualAnual = tasaAnualMonto === 28.66 ? 33.2456 / 12 : 38.2728 / 12;
         const tasaMensual = tasaMensualAnual / 100;
 
         const x = Math.pow(1 + tasaMensual, plazo);
@@ -386,7 +386,7 @@
           tasaMensual = 33.2456 / 12;
         } else {
           plazos = [18, 24, 36, 48, 60];
-          tasaMensual = 38.3032 / 12;
+          tasaMensual = 38.2728 / 12;
         }
         const tasaDecimal = tasaMensual / 100;
         document.getElementById('pagoIngresado').innerHTML =
@@ -406,3 +406,4 @@
   </script>
 </body>
 </html>
+
